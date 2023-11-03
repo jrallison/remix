@@ -143,6 +143,14 @@ export const createRequestHandler: CreateRequestHandlerFunction = (
         loadContext,
         handleError
       );
+
+      if (_build.entry.module.handleResourceRequest) {
+        response = await _build.entry.module.handleResourceRequest(response, {
+          context: loadContext,
+          params: {},
+          request,
+        });
+      }
     } else {
       response = await handleDocumentRequestRR(
         serverMode,

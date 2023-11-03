@@ -2,6 +2,7 @@ export type { ErrorResponse } from "@remix-run/router";
 
 export type {
   HandleDataRequestFunction,
+  HandleResourceRequestFunction,
   HandleDocumentRequestFunction,
   HandleErrorFunction,
   ServerBuild,

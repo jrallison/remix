@@ -46,6 +46,7 @@ export type {
   ErrorResponse,
   FlashSessionData,
   HandleDataRequestFunction,
+  HandleResourceRequestFunction,
   HandleDocumentRequestFunction,
   HeadersArgs,
   HeadersFunction,

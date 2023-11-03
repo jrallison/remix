@@ -32,6 +32,10 @@ export interface HandleDataRequestFunction {
   (response: Response, args: DataFunctionArgs): Promise<Response> | Response;
 }
 
+export interface HandleResourceRequestFunction {
+  (response: Response, args: DataFunctionArgs): Promise<Response> | Response;
+}
+
 export interface HandleErrorFunction {
   (error: unknown, args: DataFunctionArgs): void;
 }
@@ -43,5 +47,6 @@ export interface HandleErrorFunction {
 export interface ServerEntryModule {
   default: HandleDocumentRequestFunction;
   handleDataRequest?: HandleDataRequestFunction;
+  handleResourceRequest?: HandleResourceRequestFunction;
   handleError?: HandleErrorFunction;
 }

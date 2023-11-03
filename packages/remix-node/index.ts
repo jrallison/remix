@@ -51,6 +51,7 @@ export type {
   EntryContext,
   ErrorResponse,
   HandleDataRequestFunction,
+  HandleResourceRequestFunction,
   HandleDocumentRequestFunction,
   HeadersArgs,
   HeadersFunction,
